@@ -192,7 +192,7 @@ aside .comp::after {
     font-size: 1.25rem;
 }
 
-aside .comp.level-4::after { content: "★★★★☆"; }
+aside .comp.level-3::after { content: "★★★☆☆"; }
 aside .comp.level-2::after { content: "★★☆☆☆"; }
 aside .comp.level-1::after { content: "★☆☆☆☆"; }
 
