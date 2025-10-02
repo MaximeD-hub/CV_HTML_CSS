@@ -6,32 +6,39 @@
     <meta name="description" content="Mon CV en HTML et CSS">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shotcut icon" type="image/png" href="../assets/icons/cv.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>CV de Maxime Dubois</title>
 </head>
 <body>
        <!--Haut de Page-->
     <header>
-        <ul class="container">
-                <img src="../assets/maphoto.jpg" alt="Photo du cv">
-            <li>
-                <h1>
-                    <span id="prenom">Maxime</span>
-                    <span id="nom">Dubois</span>
-                </h1>
-                <h2>
-                    <span id="job">Développeur Web et Web Mobile</span>
-                </h2>
-            </li>
-            <li>
-                <a href="mailto:one.maximeduboispro@gmail.com">one.maximeduboispro@gmail.com</a>
-                <a href="https://maps.app.goo.gl/qubfY9AUz8k1qYJh8">Lyon</a>
-                <a href="tel:+330600000000">06.00.00.00.00</a>
-                <span id="liscence">Permis B</span>
-            </li>
-        </ul>
-    </header>
+            <a href="../assets/maphoto.jpg" target="_blank">
+            <img src="../assets/maphoto.jpg" alt="Photo du cv" class="profile-pic">
+            </a>
+        <div class="container"></div>
+        <div class="info">
+            <h1>
+                <span class="name">Maxime</span>
+                <span class="name">Dubois</span>
+            </h1>
+            <h2 class="job">Développeur Web et Web Mobile</h2>
+        <div class="contact">
+        <div class="col">
+                <a href="mailto:one.maximeduboispro@gmail.com"><i class="fas fa-envelope"></i>Mail</a>
+                <a href="tel:+330600000000"><i class="fas fa-phone"></i>Téléphone</a>
+        </div>
+        <div class="col">
+                <a href="https://maps.app.goo.gl/qubfY9AUz8k1qYJh8"><i class="fas fa-home"></i>Adresse</a>
+                <span id="liscence"><i class="fas fa-car"></i>Permis B</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <main class="container">
+
+
+    <main>
         <!--Coté gauche-->
         <aside>
 
@@ -39,10 +46,10 @@
             <h3>Compétences</h3>
             <ul>
                 <li>
-                    <p>HTML</p>
-                    <P>CSS</P>
-                    <p>Javascript</p>
-                    <p>PHP</p>
+                    <span class="comp level-4">HTML</span><br>
+                    <span class="comp level-4">CSS</span><br>
+                    <span class="comp level-2">Javascript</span><br>
+                    <span class="comp level-1">PHP</span>
                 </li>
             </ul>
         </article>
@@ -50,13 +57,20 @@
         <article>
             <h3>Langues</h3>
             <ul>
-                <li>
-                    <p>Français</p><span id="french">Langue Maternelle</span>
-                    <p>Anglais</p><span id="english">Professionnel</span>
-                    <p>Allemand</p><span id="german">Notion</span>
+                <li class="language-row">
+                    <span class="lang">Français</span>
+                    <span class="level">Langue maternelle</span>
+                </li>
+                <li class="language-row">
+                    <span class="lang">Anglais</span>
+                    <span class="level">Professionnel</span>
+                </li>
+                <li class="language-row">
+                    <span class="lang">Allemand</span>
+                    <span class="level">Notions</span>
                 </li>
             </ul>
-        </article>
+</article>
 
         <article>
             <h3>Qualités</h3>
@@ -85,29 +99,35 @@
 
         <section>
             <!--Milieu-->
-            <div class="container">
+            <div class="content">
                 <article>
                     <h3>Profil</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue eros, ultrices efficitur tellus in, pulvinar rutrum libero. Ut volutpat purus eu mi mollis convallis. Maecenas a erat vel nisi aliquet accumsan. Fusce in orci dictum, pharetra risus sit amet, fermentum enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus lacus nunc, fermentum ut elit ac, euismod fringilla mauris. Integer fermentum sollicitudin fermentum. Vestibulum lobortis diam nisl, et elementum arcu dapibus non. Sed commodo sapien lectus, ac sodales dolor suscipit et. Nunc eu ipsum hendrerit, ornare erat vitae, vestibulum felis. Suspendisse rutrum ultricies sapien quis tincidunt. Proin tincidunt urna a tristique gravida. </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue eros, ultrices efficitur tellus in, pulvinar rutrum libero. Ut volutpat purus eu mi mollis convallis. Maecenas a erat vel nisi aliquet accumsan. Fusce in orci dictum, pharetra risus sit amet, fermentum enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus lacus nunc, fermentum ut elit ac, euismod fringilla mauris. Integer fermentum sollicitudin fermentum. Vestibulum lobortis diam nisl, et elementum arcu dapibus non. Sed commodo sapien lectus, ac sodales dolor suscipit et. Nunc eu ipsum hendrerit, ornare erat vitae, vestibulum felis. Suspendisse rutrum ultricies sapien quis tincidunt. Proin tincidunt urna a tristique gravida. </p>
+                    <p class="profil">Lorem, ipsum sit amel consectetur adipisicing elit. Sed doloribus isle cumque odio! Sed voluptatum quidem cum quam aut valuptatem, condequuntur sunt repellendus porro eaque unde deleniti discta perferendis magni debetis dolorem atque vitae coluptas. Cum magni doloribus eius tenetur!</p>
+                    <p class="profil">Lorem, ipsum sit amel consectetur adipisicing elit. Sed doloribus isle cumque odio! Sed voluptatum quidem cum quam aut valuptatem, condequuntur sunt repellendus porro eaque unde deleniti discta perferendis magni debetis dolorem atque vitae coluptas. Cum magni doloribus eius tenetur!</p>
                 </article>
                 <article>
                     <h3>Formations</h3>
                      <ul>
                         <li class="school">
-                            <span class="title">Titre Professionnel DWWM</span>
+                            <div class="row">
+                                <span class="title">Titre Professionnel DWWM</span>
+                                <span class="date">2023/2024</span>
+                            </div>
                             <span class="location">Centre Européen de Formation</span>
-                            <span class="date">2023/2024</span>
                         </li>
                         <li class="school">
-                            <span class="title">Remise à Niveau - Métiers du Numérique</span>
+                            <div class="row">
+                                <span class="title">Remise à Niveau - Métiers du Numérique</span>
+                                <span class="date">Juin 2023 - Septembre 2023</span>
+                            </div>
                             <span class="location">Lycée de la ville</span>
-                            <span class="date">Juin 2023 - Septembre 2023</span>
                         </li>
                         <li class="school">
-                            <span class="title">Baccalauréat</span>
+                            <div class="row">
+                                <span class="title">Baccalauréat</span>
+                                <span class="date">1983</span>
+                            </div>
                             <span class="location">Lycée de la ville</span>
-                            <span class="date">1983</span>
                         </li>
                     </ul>
                 </article>
@@ -115,14 +135,18 @@
                     <h3>Stages</h3>
                     <ul>
                         <li class="exp">
-                            <span class="title">Gestionnaire de Paye</span>
+                            <div class="row">
+                                <span class="title">Gestionnaire de Paye</span>
+                                <span class="date">Mars 2022 - Avril 2022</span>
+                            </div>
                             <span class="location">Société Truc & Machin</span>
-                            <span class="date">Mars 2022 - Avril 2022</span>
                         </li>
                         <li class="exp">
-                            <span class="title">Agent d'acceuil</span>
+                            <div class="row">
+                                <span class="title">Agent d'acceuil</span>
+                                <span class="date">Janvier 2021 - Février 2021</span>
+                            </div>
                             <span class="location">Mairie de la ville</span>
-                            <span class="date">Janvier 2021 - Février 2021</span>
                         </li>
                     </ul>
                 </article>
@@ -130,19 +154,25 @@
                     <h3>Expérience professionnelle</h3>
                     <ul>
                         <li class="pro">
-                            <span class="title">Agent d'acceuil</span>
+                            <div class="row">
+                                <span class="title">Agent d'acceuil</span>
+                                <span class="date">Mars 2021 - Juillet 2021</span>
+                            </div>
                             <span class="location">Mairie de la ville</span>
-                            <span class="date">Janvier 2021 - Février 2021</span>
                         </li>
                         <li class="pro">
-                            <span class="title">Chauffeur - Livreur</span>
-                            <span class="location">Transport Nénés & Fils</span>
-                            <span class="date">Septembre 2021 - Décembre 2021</span>
+                            <div class="row">
+                                <span class="title">Chauffeur - Livreur</span>
+                                <span class="date">Septembre 2021 - Décembre 2021</span>
+                            </div>
+                            <span class="location">Transport Nénès & FIls</span>
                         </li>
                         <li class="pro">
-                            <span class="title">Préparateur de commandes</span>
+                            <div class="row">
+                                <span class="title">Préparateur de commandes</span>
+                                <span class="date">Janvier 2000 - Septembre 2000</span>
+                            </div>
                             <span class="location">Le slip français</span>
-                            <span class="date">Janvier 2000 - Septembre 2000</span>
                         </li>
                     </ul>
                 </article>
@@ -158,6 +188,7 @@
                 <a class="logo" href="https://www.instagram.com/milleetunecampagnes/"><img src="../assets/icons/instagram-square.png" alt="Instagram"></a>
             </li>
         </ul>
+        <span class="update">Mis à jour le : JJ/MM/AAA</span>
     </footer>
     
 </body>
