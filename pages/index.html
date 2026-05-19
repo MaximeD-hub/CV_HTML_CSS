@@ -1,13 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="MaximeD">
+    <meta name="description" content="Mon CV en HTML et CSS">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="shotcut icon" type="image/png" href="../assets/icons/cv.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>CV de Maxime Dubois</title>
 </head>
 <body>
+       <!--Haut de Page-->
+    <header>
+            <a href="../assets/maphoto.jpg" target="_blank">
+            <img src="../assets/maphoto.jpg" alt="Photo du cv" class="profile-pic">
+            </a>
+        <div class="container"></div>
+        <div class="info">
+            <h1>
+                <span class="name">Maxime</span>
+                <span class="name">Dubois</span>
+            </h1>
+            <h2 class="job">Développeur Web et Web Mobile</h2>
+        <div class="contact">
+        <div class="col">
+                <a href="mailto:one.maximeduboispro@gmail.com"><i class="fas fa-envelope"></i>Mail</a>
+                <a href="tel:+330600000000"><i class="fas fa-phone"></i>Téléphone</a>
+        </div>
+        <div class="col">
+                <a href="https://maps.app.goo.gl/qubfY9AUz8k1qYJh8"><i class="fas fa-home"></i>Adresse</a>
+                <span id="liscence"><i class="fas fa-car"></i>Permis B</span>
+        </div>
+      </div>
+    </div>
+</header>
+
+
+
+    <main>
+        <!--Coté gauche-->
+        <aside>
+
+        <article>
+            <h3>Compétences</h3>
+            <ul>
+                <li>
+                    <span class="comp level-3">HTML</span><br>
+                    <span class="comp level-2">CSS</span><br>
+                    <span class="comp level-1">Javascript</span><br>
+                    <span class="comp level-1">PHP</span>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Langues</h3>
+            <ul>
+                <li class="language-row">
+                    <span class="lang">Français</span>
+                    <span class="level">Langue maternelle</span>
+                </li>
+                <li class="language-row">
+                    <span class="lang">Anglais</span>
+                    <span class="level">Professionnel</span>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Qualités</h3>
+            <ul>
+                <li>
+                    <p>Esprit d'équipe</p>
+                    <p>Autonomie</p>
+                    <p>Organisation</p>
+                    <p>Créativité</p>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Centres d'intérêt</h3>
+            <ul>
+                <li>
+                    <p>Jeux Vidéo</p>
+                    <p>Jeux de Rôle</p>
+                    <p>Ecriture</p>
+                </li>
+            </ul>
+        </article>
+
+        </aside>
+
+        <section>
+            <!--Milieu-->
+            <div class="content">
+                <article>
+                    <h3>Profil</h3>
+                    <p class="profil">Fort de près de 10 ans d’expérience dans le secteur de la restauration, j’ai acquis rigueur, polyvalence et sens du relationnel.</p>
+                    <p class="profil">Aujourd’hui, je souhaite mettre cette richesse de parcours au service d’une nouvelle voie, en intégrant une formation en lien avec mes passions et mes loisirs. Mon objectif : m’épanouir pleinement dans un métier que j’affectionne et dans lequel je pourrai exprimer toute ma créativité.</p>
+                </article>
+                <article>
+                    <h3>Formations</h3>
+                     <ul>
+                        <li class="school">
+                            <div class="row">
+                                <span class="title">Titre Professionnel DWWM</span>
+                                <span class="date">2025 - En cours</span>
+                            </div>
+                            <span class="location">Centre Européen de Formation</span>
+                        </li>
+                        <li class="school">
+                            <div class="row">
+                                <span class="title">Baccalauréat PRO - Communication Visuelle</span>
+                                <span class="date">2012</span>
+                            </div>
+                            <span class="location">Lycée Saint Vincent de Paul - Soissons</span>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Stages</h3>
+                    <ul>
+                        <li class="exp">
+                            <div class="row">
+                                <span class="title">Service Maketing</span>
+                                <span class="date">2015</span>
+                            </div>
+                            <span class="location">Le Creuset - Fresnoy-Le-Grand</span>
+                        </li>
+                        <li class="exp">
+                            <div class="row">
+                                <span class="title">Communication</span>
+                                <span class="date">2014</span>
+                            </div>
+                            <span class="location">France Galot - Päris</span>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Expérience professionnelle</h3>
+                    <ul>
+                        <li class="pro">
+                            <div class="row">
+                                <span class="title">Serveur/Barman</span>
+                                <span class="date">2023-2025</span>
+                            </div>
+                            <span class="location">Kaffee Berlin - Lyon</span>
+                        </li>
+                        <li class="pro">
+                            <div class="row">
+                                <span class="title">Barman/Manager</span>
+                                <span class="date">2018-2023</span>
+                            </div>
+                            <span class="location">RED HOUSE - Lyon</span>
+                        </li>
+                        <li class="pro">
+                            <div class="row">
+                                <span class="title">Serveur/Cuisine</span>
+                                <span class="date">2016-2018</span>
+                            </div>
+                            <span class="location">Londres</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Bas de page-->
+        <ul class="container">
+            <li>
+                <a class="logo" href="https://www.linkedin.com/in/maxime-dubois-3293a5225/"><img src="../assets/icons/linkedin.png" alt="Linkedin"></a>
+                <a class="logo" href="https://github.com/MaximeD-hub"><img src="../assets/icons/github.png" alt="Github"></a>
+                <a class="logo" href="https://www.instagram.com/milleetunecampagnes/"><img src="../assets/icons/instagram-square.png" alt="Instagram"></a>
+            </li>
+        </ul>
+        <span class="update">Mis à jour le : <time datetime="2025-10-02">02/10/2025</time> </span>
+    </footer>
     
 </body>
 </html>
